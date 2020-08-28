@@ -16,3 +16,4 @@ export default class ProjectController extends Controller {
     ctx.body = projectList;
   }
 }
+

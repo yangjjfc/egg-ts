@@ -1,6 +1,7 @@
 import AJAX from '../../utils/http';
 
 module.exports = app => {
+  // 获取项目列表
   const getProjects = async ({ pageSize, pageNum, accessToken }) => {
     const { data: projectList } = await AJAX(app).methodV({
       url: '/projects',

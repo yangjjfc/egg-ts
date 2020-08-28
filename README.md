@@ -31,3 +31,10 @@ $ npm start
 
 - Node.js 8.x
 - Typescript 2.8+
+
+
+# 依赖
+* [egg-shell-decorators](https://cnodejs.org/topic/5b303eb0ac8bc1e1241143ba)
+    - 装饰器使用
+* egg-helper
+    - 自动注入app/helper中文件到ctx.helper上

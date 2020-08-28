@@ -1,5 +1,5 @@
 import { Controller } from 'egg';
-import { Post, Prefix } from 'egg-shell-decorators';
+import { Post, Prefix, Get } from 'egg-shell-decorators';
 
 @Prefix('user')
 export default class UserController extends Controller {
@@ -12,6 +12,12 @@ export default class UserController extends Controller {
       username,
       password,
     });
+    console.log('UserController -> getUserToken -> userToken', userToken);
     ctx.body = userToken;
+  }
+  @Get('/:id')
+  public async getUser() {
+    const { ctx } = this;
+    ctx.body = 'dasd';
   }
 }
