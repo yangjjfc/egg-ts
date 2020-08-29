@@ -38,3 +38,9 @@ $ npm start
     - 装饰器使用
 * egg-helper
     - 自动注入app/helper中文件到ctx.helper上
+* base controller 设置
+* egg-cors egg-jwt
+    * [egg-jw](https://segmentfault.com/a/1190000020416559?utm_source=tag-newest)
+
+* plugin.ts 用来注入插件
+* config.ts 配置
