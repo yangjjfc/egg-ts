@@ -18,6 +18,7 @@ export default class User extends Service {
   }
   // 使用 gitlab api 获取 gitlab 用户信息
   public async getUserInfo({ accessToken }) {
+    console.log('getUserInfo -> this.ctx.helper', this.ctx.helper.api.gitlab);
     const userInfo = await this.ctx.helper.api.gitlab.user.getUserInfo({
       accessToken,
     });

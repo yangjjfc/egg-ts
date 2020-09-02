@@ -44,3 +44,6 @@ $ npm start
 
 * plugin.ts 用来注入插件
 * config.ts 配置
+* egg-socket.io 引入
+* uuid
+* module-alias

@@ -1,5 +1,6 @@
 const excludeUrl = [ '/user/getUserToken' ];// 请求白名单，过滤不需要校验的请求路径
 
+// token 校验
 export default () => {
   const jwtAuth = async (ctx, next) => {
     if (excludeUrl.includes(ctx.request.url)) {

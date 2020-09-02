@@ -2,11 +2,13 @@
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
+import ExportBase from '../../../app/controller/base';
 import ExportProject from '../../../app/controller/project';
 import ExportUser from '../../../app/controller/user';
 
 declare module 'egg' {
   interface IController {
+    base: ExportBase;
     project: ExportProject;
     user: ExportUser;
   }

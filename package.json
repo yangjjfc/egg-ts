@@ -8,9 +8,9 @@
     "declarations": true
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-egg-ts",
+    "start": "egg-scripts start --sticky --daemon --title=egg-server-egg-ts",
     "stop": "egg-scripts stop --title=egg-server-egg-ts",
-    "dev": "egg-bin dev",
+    "dev": "egg-bin dev --sticky",
     "debug": "egg-bin debug",
     "test-local": "egg-bin test",
     "test": "npm run lint -- --fix && npm run test-local",
@@ -29,8 +29,11 @@
     "egg-scripts": "^2.6.0",
     "egg-sequelize": "^5.2.2",
     "egg-shell-decorators": "^1.0.7",
+    "egg-socket.io": "^4.1.6",
+    "module-alias": "^2.2.2",
     "mysql2": "^2.1.0",
-    "tslint": "^6.1.3"
+    "tslint": "^6.1.3",
+    "uuid": "^8.3.0"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.40",
